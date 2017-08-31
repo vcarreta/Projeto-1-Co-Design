@@ -8,6 +8,10 @@ a {
 	color: rgb(5,204,29);
 }
 
+a:hover {
+	color: white;
+}
+
 .mesa {
 	font-size: 150%;
 	padding: 20px;
