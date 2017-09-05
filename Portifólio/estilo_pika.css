@@ -1,8 +1,10 @@
 *{
-	font-family: 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 98%;
 }
  
 h1 {
+	font-family: 'Montserrat', sans-serif;
 	padding: 20px;
 	font-size:300%;
 	background-color: rgb(5,204,29);
