@@ -5,13 +5,20 @@
  
 h1 {
 	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
-	font-size:300%;
-	background-color: rgb(5,204,29);
+	font-size:650%;
+	color: White;
+	text-align: center;
 }
+
+.roda {
+	font-size:50%;
+}
+
 
 a {
 	color: rgb(5,204,29);
+	text-decoration: none;
+	font-size: 120%;
 }
 
 a:hover {
@@ -34,4 +41,20 @@ img {
 
 body {
 	background-color: rgb(5,28,29);
+}
+
+.nav {
+	font-size: 150%;
+}
+
+.home {
+	color: White;
+}
+
+.proj {
+	color: White;
+}
+
+.integ {
+	color: White;
 }
