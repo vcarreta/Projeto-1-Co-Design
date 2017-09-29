@@ -119,5 +119,9 @@ div.tab button.active {
 
 .info {
 	color: White;
-	font-size: 19px;
+	font-size: 25px;
+}
+
+.douglas {
+	font-size:40px;
 }
