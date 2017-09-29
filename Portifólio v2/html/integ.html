@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Integrantes</title>
+		<link rel="stylesheet" type="text/css" href="..\css\estilo_pika.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+		<script type="text/javascript" src="..\js\efeitos.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="..\index.html"> Home </a>
+			&nbsp;
+			<a href="integ.html" class="integ"> Integrantes </a>
+		</div>
+		<hr>
+		<div class="cabeça">
+			<h1>Integrantes</h1>
+		</div>
+		&nbsp;
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><b>Iago Rainha</b></button>
+		  <button class="tablinks" onclick="openCity(event, 'Paris')"><b>Vitor Carreta</b></button>
+		  <button class="tablinks" onclick="openCity(event, 'Tokyo')"><b>Jooj Augusto</b></button>
+		  <button class="tablinks" onclick="openCity(event, 'New York')"><b>Rodrigo Rei</b></button>
+		</div>
+
+		<div id="London" class="tabcontent">
+			<div class="info">
+			  	<h3>London</h3>
+			  	<p>London is the capital city of England.</p>
+			</div>
+		</div>
+
+		<div id="Paris" class="tabcontent">
+			<div class="info">
+			  	<h3>Paris</h3>
+			  	<p>Paris is the capital of France.</p> 
+			</div>
+		</div>
+
+		<div id="Tokyo" class="tabcontent">
+			<div class="info">
+			  	<h3>Tokyo</h3>
+			  	<p>Tokyo is the capital of Japan.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nibh sit amet ante pellentesque hendrerit. Mauris nec semper turpis, sit amet porta libero. Mauris neque justo, porttitor ac feugiat ac, vulputate a arcu. Duis condimentum mauris sit amet lorem mollis gravida. Morbi elementum posuere libero. Maecenas condimentum odio felis, eget tempor tellus rhoncus sit amet. Vivamus lacinia metus nec felis volutpat, in fermentum justo ultricies. Suspendisse ut tincidunt lacus. Suspendisse tincidunt pellentesque justo, non placerat eros consequat in. Praesent euismod ultrices lacinia. Aenean nec massa orci. Mauris vitae ex libero. Suspendisse vitae ullamcorper diam, eget finibus metus. Nunc sed velit vel mi ullamcorper ultrices eu non eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nibh sit amet ante pellentesque hendrerit. Mauris nec semper turpis, sit amet porta libero. Mauris neque justo, porttitor ac feugiat ac, vulputate a arcu. Duis condimentum mauris sit amet lorem mollis gravida. Morbi elementum posuere libero. Maecenas condimentum odio felis, eget tempor tellus rhoncus sit amet. Vivamus lacinia metus nec felis volutpat, in fermentum justo ultricies. Suspendisse ut tincidunt lacus. Suspendisse tincidunt pellentesque justo, non placerat eros consequat in. Praesent euismod ultrices lacinia. Aenean nec massa orci. Mauris vitae ex libero. Suspendisse vitae ullamcorper diam, eget finibus metus. Nunc sed velit vel mi ullamcorper ultrices eu non eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nibh sit amet ante pellentesque hendrerit. Mauris nec semper turpis, sit amet porta libero. Mauris neque justo, porttitor ac feugiat ac, vulputate a arcu. Duis condimentum mauris sit amet lorem mollis gravida. Morbi elementum posuere libero. Maecenas condimentum odio felis, eget tempor tellus rhoncus sit amet. Vivamus lacinia metus nec felis volutpat, in fermentum justo ultricies. Suspendisse ut tincidunt lacus. Suspendisse tincidunt pellentesque justo, non placerat eros consequat in. Praesent euismod ultrices lacinia. Aenean nec massa orci. Mauris vitae ex libero. Suspendisse vitae ullamcorper diam, eget finibus metus. Nunc sed velit vel mi ullamcorper ultrices eu non eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nibh sit amet ante pellentesque hendrerit. Mauris nec semper turpis, sit amet porta libero. Mauris neque justo, porttitor ac feugiat ac, vulputate a arcu. Duis condimentum mauris sit amet lorem mollis gravida. Morbi elementum posuere libero. Maecenas condimentum odio felis, eget tempor tellus rhoncus sit amet. Vivamus lacinia metus nec felis volutpat, in fermentum justo ultricies. Suspendisse ut tincidunt lacus. Suspendisse tincidunt pellentesque justo, non placerat eros consequat in. Praesent euismod ultrices lacinia. Aenean nec massa orci. Mauris vitae ex libero. Suspendisse vitae ullamcorper diam, eget finibus metus. Nunc sed velit vel mi ullamcorper ultrices eu non eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nibh sit amet ante pellentesque hendrerit. Mauris nec semper turpis, sit amet porta libero. Mauris neque justo, porttitor ac feugiat ac, vulputate a arcu. Duis condimentum mauris sit amet lorem mollis gravida. Morbi elementum posuere libero. Maecenas condimentum odio felis, eget tempor tellus rhoncus sit amet. Vivamus lacinia metus nec felis volutpat, in fermentum justo ultricies. Suspendisse ut tincidunt lacus. Suspendisse tincidunt pellentesque justo, non placerat eros consequat in. Praesent euismod ultrices lacinia. Aenean nec massa orci. Mauris vitae ex libero. Suspendisse vitae ullamcorper diam, eget finibus metus. Nunc sed velit vel mi ullamcorper ultrices eu non eros.</p>
+			</div>
+		</div>
+
+		<div id="New York" class="tabcontent">
+			<div class="info">
+			  	<h3>Paris</h3>
+			  	<p>Paris is the capital of France.</p>
+		  	</div>
+		</div>
+
+		<script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+		</script>
+	</body>
+</html>
