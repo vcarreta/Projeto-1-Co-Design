@@ -79,15 +79,15 @@
 		&nbsp;
 		<div class="tab">
 		  <button class="tablinks" onclick="openCity(event, 'Iago Rainha Mendes')" id="defaultOpen"><b>Iago Rainha Mendes</b></button>
-		  <button class="tablinks" onclick="openCity(event, 'Vitor Carroça')"><b>Vitor Carroça</b></button>
-		  <button class="tablinks" onclick="openCity(event, 'Jooj Augusto')"><b>Jooj Augusto</b></button>
+		  <button class="tablinks" onclick="openCity(event, 'Vitor Carreta')"><b>Vitor Carreta</b></button>
+		  <button class="tablinks" onclick="openCity(event, 'Jorge Augusto')"><b>Jorge Augusto</b></button>
 		  <button class="tablinks" onclick="openCity(event, 'Rodrigo Rey')"><b>Rodrigo Rey</b></button>
 		</div>
 
 		<div id="Iago Rainha Mendes" class="tabcontent">
 			<div class="info">
 				<table>
-					<td><img src="../img/deus.jpg"></td>
+					<td><img src="../img/deus.jpg" class="image"></td>
 					<td>
 						<div class="douglas">
 				  			<h2>Iago Rainha Mendes</h2>
@@ -107,9 +107,9 @@
 							<nav id="options">
 					            <ul>
 					                <li><button type="button" class="btn btn-primary" rel="all" >Todos</button></li>
-					                <li><button type="button" class="btn btn-primary" rel="tipo1">Projeto</button></li>
-					                <li><button type="button" class="btn btn-primary" rel="tipo2">Modelo</button></li>
-					 
+					                <li><button type="button" class="btn btn-primary" rel="tipo1">Programação</button></li>
+					                <li><button type="button" class="btn btn-primary" rel="tipo2">Projetos práticos</button></li>
+					                <li><button type="button" class="btn btn-primary" rel="tipo3">Modelagem</button></li>
 					            </ul>
 					        </nav>
 
@@ -120,10 +120,10 @@
 					            <li class="tipo1"><a href="#"><img src="..\img\html5-01.jpg" alt=""></a></li>
 					            <li class="tipo1"><a href="#"><img src="..\img\html5-02.png" alt=""></a></li>
 					            <li class="tipo2"><a href="#"><img src="..\img\html5-03.png" alt=""></a></li> -->
-					            <li class="tipo1">
+					            <li class="tipo2">
 					            	<a id="myBtn">
 							            <div class="container2">
-										  <img src="..\img\html5-03.png" alt="Avatar" class="image">
+										  <img src="..\img\image.jpeg" alt="Avatar" class="image">
 										  <div class="overlay">
 										    <div class="text">Brinquedo Nat-Des</div>
 										  </div>
@@ -138,11 +138,12 @@
 									      <h2>Brinquedo Natureza do Design</h2>
 									    </div>
 									    <div class="modal-body">
-									      <img src="..\img\image.jpeg" alt="Avatar" class="image">
+									      <img src="..\img\image.jpeg" class="vsf">
 									      <p>Some other text...</p>
 									    </div>
 									    <div class="modal-footer">
-									      <h3>Modal Footer</h3>
+									      <h3>Neste projeto, tinhamos o objetivo de fazer um produto (brinquedo) para crianças na faixa etária de 6 à 8 anos.</h3>
+									      <h3>O produto deveria ser bioinspirado, para ajudas as crianças a desenvolver certa empatia por animais.</h3>
 									    </div>
 									  </div>
 
@@ -179,32 +180,179 @@
 								&nbsp;
 								&nbsp;
 								<li class="tipo2">
-						            <div class="container2">
-									  <img src="..\img\html5-01.jpg" alt="Avatar" class="image">
-									  <div class="overlay">
-									    <div class="text">Hello World</div>
+									<a id="myBtn2">
+							            <div class="container2">
+										  <img src="..\img\image2.jpeg" alt="Avatar" class="image">
+										  <div class="overlay">
+										    <div class="text">Estação Metereológica</div>
+										  </div>
+										</div>
+									</a>
+									<!-- The Modal -->
+									<div id="myModal2" class="modal">
+									  <!-- Modal content -->
+									  <div class="modal-content2">
+									    <div class="modal-header">
+									      <span class="close2">&times;</span>
+									      <h2>Estação metereológica</h2>
+									    </div>
+									    <div class="modal-body2">
+									      <img src="..\img\image2.jpeg" class="vsf">
+									      <p>Some other text...</p>
+									    </div>
+									    <div class="modal-footer">
+									      <h3>O projeto de instrumentação e medição nos instruia a construir uma estação meteorológica, fazendo o uso de arduino e sensores analógicos.</h3>
+									      <h3>O produto final tinha um display de led que mostrava a temperatura, pressão, humidade e altitude em relação ao nível do mar.</h3>
+									    </div>
 									  </div>
+
 									</div>
+									<script>
+
+																// Get the modal
+										var modal2 = document.getElementById('myModal2');
+
+										// Get the button that opens the modal
+										var btn = document.getElementById("myBtn2");
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close2")[0];
+
+										// When the user clicks on the button, open the modal 
+										btn.onclick = function() {
+										    modal2.style.display = "block";
+										}
+
+										// When the user clicks on <span> (x), close the modal
+										span.onclick = function() {
+										    modal2.style.display = "none";
+										}
+
+										// When the user clicks anywhere outside of the modal, close it
+										window.onclick = function(event) {
+										    if (event.target == modal2) {
+										        modal2.style.display = "none";
+										    }
+										}
+									</script>
 								</li>
 								&nbsp;
 								&nbsp;
 								<li class="tipo1">
-						            <div class="container2">
-									  <img src="..\img\php-03.png" alt="Avatar" class="image">
-									  <div class="overlay">
-									    <div class="text">Hello World</div>
+									<a id="myBtn3">
+							            <div class="container2">
+										  <img src="..\img\image5.jpeg" alt="Avatar" class="image">
+										  <div class="overlay">
+										    <div class="text">Lights Out</div>
+										  </div>
+										</div>
+									</a>
+									<!-- The Modal -->
+									<div id="myModal3" class="modal">
+									  <!-- Modal content -->
+									  <div class="modal-content3">
+									    <div class="modal-header">
+									      <span class="close3">&times;</span>
+									      <h2>Lights Out</h2>
+									    </div>
+									    <div class="modal-body3">
+									      <img src="..\img\image5.jpeg" class="vsf">
+									      <p>Some other text...</p>
+									    </div>
+									    <div class="modal-footer">
+									      <h3>Lights Out é um jogo de labirintos, programado em Python, durante a disciplina de Design de Software</h3>
+									      <h3>O jogo conta a história de um escritor que, ao buscar a história perfeita, acaba se perdendo dentro de um hospício abandondo.</h3>
+									    </div>
 									  </div>
+
 									</div>
+									<script>
+
+																// Get the modal
+										var modal3 = document.getElementById('myModal3');
+
+										// Get the button that opens the modal
+										var btn = document.getElementById("myBtn3");
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close3")[0];
+
+										// When the user clicks on the button, open the modal 
+										btn.onclick = function() {
+										    modal3.style.display = "block";
+										}
+
+										// When the user clicks on <span> (x), close the modal
+										span.onclick = function() {
+										    modal3.style.display = "none";
+										}
+
+										// When the user clicks anywhere outside of the modal, close it
+										window.onclick = function(event) {
+										    if (event.target == modal3) {
+										        modal3.style.display = "none";
+										    }
+										}
+									</script>
 								</li>
 								&nbsp;
 								&nbsp;
-								<li class="tipo2">
-						            <div class="container2">
-									  <img src="..\img\php-01.jpg" alt="Avatar" class="image">
-									  <div class="overlay">
-									    <div class="text">Hello World</div>
+								<li class="tipo3">
+									<a id="myBtn4">
+							            <div class="container2">
+										  <img src="..\img\image6.jpeg" alt="Avatar" class="image">
+										  <div class="overlay">
+										    <div class="text">Care Package</div>
+										  </div>
+										</div>
+									</a>
+									<!-- The Modal -->
+									<div id="myModal4" class="modal">
+									  <!-- Modal content -->
+									  <div class="modal-content4">
+									    <div class="modal-header">
+									      <span class="close4">&times;</span>
+									      <h2>Care Package</h2>
+									    </div>
+									    <div class="modal-body4">
+									      <img src="..\img\image6.jpeg" class="vsf">
+									      <p>Some other text...</p>
+									    </div>
+									    <div class="modal-footer">
+									      <h3>O objetivo desse projeto era, a partir de equações físicas, modelar um sistema real do mundo e descrever seu comportamento.</h3>
+									      <h3>Esse projeto em específico buscava estudar o comportamento de uma Care Package sendo entregue para soldados.</h3>
+									    </div>
 									  </div>
+
 									</div>
+									<script>
+
+																// Get the modal
+										var modal4 = document.getElementById('myModal4');
+
+										// Get the button that opens the modal
+										var btn = document.getElementById("myBtn4");
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close4")[0];
+
+										// When the user clicks on the button, open the modal 
+										btn.onclick = function() {
+										    modal4.style.display = "block";
+										}
+
+										// When the user clicks on <span> (x), close the modal
+										span.onclick = function() {
+										    modal4.style.display = "none";
+										}
+
+										// When the user clicks anywhere outside of the modal, close it
+										window.onclick = function(event) {
+										    if (event.target == modal4) {
+										        modal4.style.display = "none";
+										    }
+										}
+									</script>
 								</li>
 					        </ul>
 						</div>	
@@ -213,13 +361,13 @@
 			</div>
 		</div>
 
-		<div id="Vitor Carroça" class="tabcontent">
+		<div id="Vitor Carreta" class="tabcontent">
 			<div class="info">
 				<table>
-					<td><img src="../img/carreta.jpg"></td>
+					<td><img src="../img/carreta.jpg" class="image"></td>
 					<td>
 						<div class="douglas">
-				  			<h2>Vitor Carroça</h2>
+				  			<h2>Vitor Carreta</h2>
 				  		</div>
 				  	  	<div>
 				  	  		<li><b>Data de nascimento:</b> 19/10/1998</li>
@@ -234,13 +382,13 @@
 			</div>
 		</div>
 
-		<div id="Jooj Augusto" class="tabcontent">
+		<div id="Jorge Augusto" class="tabcontent">
 			<div class="info">
 				<table>
-					<td><img src="../img/jorgeaventureiro.jpg"></td>
+					<td><img src="../img/jorgeaventureiro.jpg" class="image"></td>
 					<td>
 						<div class="douglas">
-				  			<h2>Jooj Augusto</h2>
+				  			<h2>Jorge Augusto</h2>
 				  		</div>
 				  	  	<div>
 				  	  		<li><b>Data de nascimento:</b> 05/04/1998</li>
@@ -258,7 +406,7 @@
 		<div id="Rodrigo Rey" class="tabcontent">
 			<div class="info">
 				<table>
-					<td><img src="../img/boludo.jpg"></td>
+					<td><img src="../img/boludo.jpg" class="image"></td>
 					<td>
 						<div class="douglas">
 				  			<h2>Rodrigo Rey</h2>
