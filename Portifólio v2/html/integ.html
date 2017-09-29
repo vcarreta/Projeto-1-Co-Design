@@ -6,6 +6,65 @@
 		<link rel="stylesheet" type="text/css" href="..\css\estilo_pika.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 		<script type="text/javascript" src="..\js\efeitos.js"></script>
+		<link rel="stylesheet"
+              type="text/css"
+              href="css/bootstrap.css"
+              />
+        <link rel="stylesheet"
+              type="text/css"
+              href="..\css\estilo.css"
+              />
+       
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+        <script type="text/javascript">
+            $(function() {
+                /**
+                 * Atribui o evento click ao link #options a
+                 * Ao disparar o evento, é executado uma função anônima
+                 */
+                $("#options button").click(function() {
+                    /**
+                     * Definimos uma variavel, que recebe
+                     * O valor do atributo rel
+                     */
+                    var type = $(this).attr('rel');
+                    /**
+                     * Verificamos se o valor do rel
+                     * é diferente de all
+                     */
+                    if(type !== 'all'){
+                        /**
+                         * Aqui selecionamos os itens que tem a classe
+                         * igual do atributo rel
+                         * Usamos o animate, para criar animação em atributos do CSS
+                         * que no caso é a largura, e opacidade.
+                         * No caso, se tiver oculto, definimos com largura com valor 150,
+                         * opacidade valor 1
+                         **/
+                         $("#items li."+type).animate({'width' : 150, 'opacity' : 1});
+                         /**
+                          * Aqui fazemos a mesma seleção, sendo usando :not,
+                          * assim vamos selecionar os itens, que forem direrente
+                          * do valor do atributo rel
+                          * Usamos o animate, para definir o valor de largura como 0, e opacidade 0
+                          */
+                         $("#items li:not(."+type+")").animate({'width' : 0, 'opacity' : 0});
+                    }else{
+                        /**
+                         * Caso o atributo rel do link clicado for all
+                         * ele vai exibir todos os itens novamente
+                         * definimos a largura, e a opacidade como 1
+                         */
+                         $("#items li").animate({'width' : 150, 'opacity' : 1});
+                    }
+                    /**
+                     * Retorna como false, anular a ação padrão do link
+                     */
+                    return false;
+                });
+            });
+        </script>
 	</head>
 	<body>
 		<div class="nav">
@@ -41,7 +100,115 @@
 							<li><b>E-mail:</b> iagorm@al.insper.edu.br</li>
 							<li><b>Facebook:</b> <a class="facebrooklynson" href="https://www.facebook.com/iago.mendes" target="_blank">https://www.facebook.com/iago.mendes</a></li>
 						</div>
-					</td>	
+						
+					</td>
+					<table>
+						<div>
+							<nav id="options">
+					            <ul>
+					                <li><button type="button" class="btn btn-primary" rel="all" >Todos</button></li>
+					                <li><button type="button" class="btn btn-primary" rel="tipo1">Projeto</button></li>
+					                <li><button type="button" class="btn btn-primary" rel="tipo2">Modelo</button></li>
+					 
+					            </ul>
+					        </nav>
+
+					        <ul id="items">
+					            <!--<li class="tipo1"><a href="#"><img src="..\img\php-01.jpg" alt=""></a></li>
+					            <li class="tipo1"><a href="#"><img src="..\img\php-02.png" alt=""></a></li>
+					            <li class="tipo2"><a href="#"><img src="..\img\php-03.png" alt=""></a></li>
+					            <li class="tipo1"><a href="#"><img src="..\img\html5-01.jpg" alt=""></a></li>
+					            <li class="tipo1"><a href="#"><img src="..\img\html5-02.png" alt=""></a></li>
+					            <li class="tipo2"><a href="#"><img src="..\img\html5-03.png" alt=""></a></li> -->
+					            <li class="tipo1">
+					            	<a id="myBtn">
+							            <div class="container2">
+										  <img src="..\img\html5-03.png" alt="Avatar" class="image">
+										  <div class="overlay">
+										    <div class="text">Brinquedo Nat-Des</div>
+										  </div>
+										</div>
+									</a>
+									<!-- The Modal -->
+									<div id="myModal" class="modal">
+									  <!-- Modal content -->
+									  <div class="modal-content">
+									    <div class="modal-header">
+									      <span class="close">&times;</span>
+									      <h2>Brinquedo Natureza do Design</h2>
+									    </div>
+									    <div class="modal-body">
+									      <p>Some text in the Modal Body</p>
+									      <p>Some other text...</p>
+									    </div>
+									    <div class="modal-footer">
+									      <h3>Modal Footer</h3>
+									    </div>
+									  </div>
+
+									</div>
+									<script>
+
+																// Get the modal
+										var modal = document.getElementById('myModal');
+
+										// Get the button that opens the modal
+										var btn = document.getElementById("myBtn");
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close")[0];
+
+										// When the user clicks on the button, open the modal 
+										btn.onclick = function() {
+										    modal.style.display = "block";
+										}
+
+										// When the user clicks on <span> (x), close the modal
+										span.onclick = function() {
+										    modal.style.display = "none";
+										}
+
+										// When the user clicks anywhere outside of the modal, close it
+										window.onclick = function(event) {
+										    if (event.target == modal) {
+										        modal.style.display = "none";
+										    }
+										}
+									</script>
+								</li>
+								&nbsp;
+								&nbsp;
+								<li class="tipo2">
+						            <div class="container2">
+									  <img src="..\img\html5-01.jpg" alt="Avatar" class="image">
+									  <div class="overlay">
+									    <div class="text">Hello World</div>
+									  </div>
+									</div>
+								</li>
+								&nbsp;
+								&nbsp;
+								<li class="tipo1">
+						            <div class="container2">
+									  <img src="..\img\php-03.png" alt="Avatar" class="image">
+									  <div class="overlay">
+									    <div class="text">Hello World</div>
+									  </div>
+									</div>
+								</li>
+								&nbsp;
+								&nbsp;
+								<li class="tipo2">
+						            <div class="container2">
+									  <img src="..\img\php-01.jpg" alt="Avatar" class="image">
+									  <div class="overlay">
+									    <div class="text">Hello World</div>
+									  </div>
+									</div>
+								</li>
+					        </ul>
+						</div>	
+					</table>
 				</table>
 			</div>
 		</div>
