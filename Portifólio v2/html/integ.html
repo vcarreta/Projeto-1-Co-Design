@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Integrantes</title>
+		<link rel="stylesheet" type="text/css" href="..\css\estilo_pika.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+		<script type="text/javascript" src="..\js\efeitos.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="..\index.html"> Home </a>
+			&nbsp;
+			<a href="integ.html" class="integ"> Integrantes </a>
+		</div>
+		<hr>
+		<div class="cabeça">
+			<h1>Integrantes</h1>
+		</div>
+		&nbsp;
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'Iago Rainha Mendes')" id="defaultOpen"><b>Iago Rainha Mendes</b></button>
+		  <button class="tablinks" onclick="openCity(event, 'Vitor Carroça')"><b>Vitor Carroça</b></button>
+		  <button class="tablinks" onclick="openCity(event, 'Jooj Augusto')"><b>Jooj Augusto</b></button>
+		  <button class="tablinks" onclick="openCity(event, 'Rodrigo Rey')"><b>Rodrigo Rey</b></button>
+		</div>
+
+		<div id="Iago Rainha Mendes" class="tabcontent">
+			<div class="info">
+				<div class="douglas">
+			  	<h2>Iago Rainha Mendes</h2>
+			  	</div>
+			  	<li><b>Data de nascimento:</b> 27/09/1999</li>
+				<li><b>Cidade:</b> São Paulo</li>
+				<li><b>Curso:</b> Engenharia de Computação</li>
+				<li><b>Semestre:</b> 2°</li>
+				<li><b>E-mail:</b> iagorm@al.insper.edu.br</li>
+				<li><b>Facebook:</b> <a class="facebrooklynson" href="https://www.facebook.com/iago.mendes" target="_blank">https://www.facebook.com/iago.mendes</a></li>
+				<img src="../img/deus.jpg">
+			</div>
+		</div>
+
+		<div id="Vitor Carroça" class="tabcontent">
+			<div class="info">
+				<div class="douglas">
+			  	<h2>Vitor Carroça</h2>
+			  	</div>
+			  	<li><b>Data de nascimento:</b> 19/10/1998</li>
+				<li><b>Cidade:</b> São Paulo</li>
+				<li><b>Curso:</b> Engenharia Mecatrônica</li>
+				<li><b>Semestre:</b> 2°</li>
+				<li><b>E-mail:</b> vitorca1@al.insper.edu.br</li>
+				<li><b>Facebook:</b> <a class="facebrooklynson" href="https://www.facebook.com/vitor.carreta" target="_blank">https://www.facebook.com/vitor.carreta</a></li>
+				<img src="../img/carreta.jpg">
+			</div>
+		</div>
+
+		<div id="Jooj Augusto" class="tabcontent">
+			<div class="info">
+				<div class="douglas">
+			  	<h2>Jooj Augusto</h2>
+			  	</div>
+			  	<li><b>Data de nascimento:</b> 05/04/1998</li>
+				<li><b>Cidade:</b> São Paulo</li>
+				<li><b>Curso:</b> Engenharia de Computação</li>
+				<li><b>Semestre:</b> 2°</li>
+				<li><b>E-mail:</b> jorgeavbe@al.insper.edu.br</li>
+				<li><b>Facebook:</b> <a class="facebrooklynson" href="https://www.facebook.com/" target="_blank">https://www.facebook.com/jorgeaugusto.ehrhardt</a></li>
+				<img src="../img/jorgeaventureiro.jpg">
+			</div>
+		</div>
+
+		<div id="Rodrigo Rey" class="tabcontent">
+			<div class="info">
+			  	<div class="douglas">
+			  	<h2>Rodrigo Rey</h2>
+			  	</div>
+			  	<li><b>Data de nascimento:</b> 17/03/1998</li>
+				<li><b>Cidade:</b> São Paulo</li>
+				<li><b>Curso:</b> Engenharia Mecânica</li> 
+				<li><b>Semestre:</b> 2º</li>
+				<li><b>E-mail:</b> rodrigocr1@al.insper.edu.br</li>
+				<li><b>Facebook:</b> <a class="facebrooklynson" href="https://www.facebook.com/rod.crespo" target="_blank">https://www.facebook.com/rod.crespo</a></li>
+				<img src="../img/boludo.jpg">
+		  	</div>
+		</div>
+
+		<script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+		</script>
+	</body>
+</html>
